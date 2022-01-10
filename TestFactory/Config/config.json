@@ -1,0 +1,58 @@
+{
+    "commands": [
+        {
+            "path": "Path1",
+            "methods": [
+                {
+                    "title": "test",
+                    "method": "printMsg",
+                    "data": "Taking a Test Drive",
+                    "invokeType": "Internal"
+                },
+                {
+                    "title": "car",
+                    "method": "drive",
+                    "data": "Mahindra Scorpio",
+                    "invokeType": "Internal"
+                },
+                {
+                    "title": "test",
+                    "method": "printMsg",
+                    "data": "Finishing Test Drive",
+                    "invokeType": "Internal"
+                }
+            ]
+        },
+        {
+            "path": "Path2",
+            "methods": [
+                {
+                    "title": "test",
+                    "method": "printMsg",
+                    "data": "Taking a Test Drive",
+                    "invokeType": "Internal"
+                },
+                {
+                    "title": "TestWeb",
+                    "method": "post",
+                    "serviceUrl":"http://localhost:3000/test1",
+                    "data":{ "data": { "name": "Nilanjan Dutta" } },
+                    "invokeType": "External"
+                },
+                {
+                    "title": "TestWeb",
+                    "method": "post",
+                    "serviceUrl":"http://localhost:3001/test2",
+                    "data":{ "data": { "name": "Nilanjan Dutta","code":"<placeholder>" } },
+                    "invokeType": "External"
+                },
+                {
+                    "title": "test",
+                    "method": "printMsg",
+                    "data": "Finishing Test Drive",
+                    "invokeType": "Internal"
+                }
+            ]
+        }
+    ]
+}
